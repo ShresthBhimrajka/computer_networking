@@ -18,7 +18,7 @@ int main()
     len = sizeof(address);
     result = connect(sockfd, (struct sockaddr *)&address, len);
     if(result == -1) {
-        perror(“oops: client1”);
+        perror("oops: client1");
         exit(1);
     }
     write(sockfd, &ch, 1);
